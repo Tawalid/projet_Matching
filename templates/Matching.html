@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="column">
+    {{ data }}
+    <div class="col-md-4">
+            <a href="{{link}}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-external-link-alt"></i> lien
+            </a>
+        </div>
+  </div>
+    <div class="column">
+    {{ data1 }}
+    <div class="col-md-4">
+            <a href="{{link1}}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-external-link-alt"></i> lien
+            </a>
+        </div>
+  </div>
+<div class="column">
+    {{ data2 }}
+    <div class="col-md-4">
+            <a href="{{link2}}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-external-link-alt"></i> lien
+            </a>
+        </div>
+  </div>
+<div class="column">
+    {{ data3 }}
+    <div class="col-md-4">
+            <a href="{{link3}}" class="btn btn-secondary btn-block btn-lg">
+               <i class="fas fa-external-link-alt"></i> lien
+            </a>
+        </div>
+  </div>
+<div class="column">
+    {{ data4 }}
+    <div class="col-md-4">
+            <a href="{{link4}}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-external-link-alt"></i> lien
+            </a>
+        </div>
+  </div>
+<div class="column">
+    {{ data5 }}
+    <div class="col-md-4">
+            <a href="{{link5}}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-external-link-alt"></i> lien
+            </a>
+        </div>
+  </div>
+<div class="col-md-4">
+            <a href="{% url 'home' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-undo"></i> Nouvelle Recherche
+            </a>
+        </div>
+{% endblock content %}

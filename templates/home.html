@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Trouvons l'emploi parfait.</h1>
+    <h2>Nous faisons tout le travail à votre place.</h2>
+<div class="row">
+    <div class="col-md-4">
+            <a href="{% url 'basic' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fab fa-searchengin"></i> Rechercher
+            </a>
+        </div>
+    <div class="col-md-4">
+        <a href="{% url 'graphiques' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="far fa-chart-bar"></i> Statistiques relatives
+            </a>
+        </div>
+    </div>
+{% endblock content %}

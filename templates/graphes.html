@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}  
+<div class="row">
+  <div class="column">
+      <h6>Experience requise auprés des recruteurs</h6>
+    <img src="data:image/png;base64,{{ data }}" alt="" height="250" ,width="250">
+  </div>
+  <div class="column">
+      <h6 style="text-align:center">Experience des candidats</h6>
+      <img  src="data:image/png;base64,{{ data2 }}" alt="" height="250" ,width="250" align="right">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+      <h6>Niveau d'etudes requis auprés des recruteurs</h6>
+    <img src="data:image/png;base64,{{ data3 }}" alt="" height="250" ,width="250">
+  </div>
+  <div class="column">
+      <h6 style="text-align:center">Niveau d'etudes des candidats</h6>
+      <img  src="data:image/png;base64,{{ data4 }}" alt="" height="250" ,width="250" align="right">
+  </div>
+</div>
+<div class="col-md-4">
+            <a href="{% url 'WordCloud' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fab fa-wordpress"></i>WordCloud
+            </a>
+        </div>
+{% endblock content %}
